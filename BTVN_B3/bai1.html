@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/58d4e782be.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+    hr{
+        width: 100vw;
+        position: absolute;
+        left: 0px;
+       border-color: rgba(204, 204, 204, 0.5)
+    }
+    body{
+        padding: 0 80px;
+        border: solid 1px rgba(204, 204, 204, 0.5);
+    }
+    #banner{
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        border-radius: 10px;
+        
+    }
+    #header-logo{
+        width: 130px;
+        margin-right: 70px
+        
+    }
+    #header-top{
+        width: 100vw;
+        border-bottom: solid 1px;
+        border-color: rgba(204, 204, 204, 0.5);
+       display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: gray;
+    }   
+.header__embed-icon button{
+            margin-left: 3px;  
+            width: 30px;  
+            height: 30px;
+            border-radius: 10px;  
+            border: none;     
+        }
+.header__embed-icon button:hover{
+            cursor: pointer;
+            background-color: pink;
+        
+}
+.header__text{
+           font-size: 12px;
+        }
+.header__tigia-and-language select{
+            border: none;
+        }
+.header__search-logo{
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+}
+.header__search-logo__button{
+    position: absolute;
+    right: 0px;
+    
+}
+.header__search-logo__button a{
+    margin-left: 3px;  
+   padding-left: 20px;
+    cursor: pointer;
+}
+.header__search{
+
+    width: 70%;
+    position: relative;
+}
+.header__search__input{
+    border-color: rgba(204, 204, 204, 0.5);
+    border-radius: 10px;
+    width: 95%;
+    height: 45px;
+    font-size: 15px;
+    padding: 10px;
+}
+.header__search__input:focus{
+    border-color: black;
+}
+.header__search__a{
+    position: absolute;
+    cursor: pointer;
+    right: 70px;
+    top: 13px;
+}
+.header__banner{
+    position: relative;
+}
+.header__banner__text{
+    font-size: 20px;
+}
+.header__banner__text span{
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+}
+.menu{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+    border-top: solid 1px;
+    border-color: rgba(204, 204, 204, 0.5);
+
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+
+}
+.menu ul li{
+    text-align: center;
+    margin-left: 40px;
+    padding: 15px 0;
+}
+.menu ul li a{
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: hsl(0, 0%, 27%)
+}
+.menu ul li a:hover{
+    border-bottom: solid 3px hsl(353, 100%, 78%);
+    color: hsl(353, 100%, 78%);
+}
+.header__banner__block-text{
+    position: absolute;
+    width: 390px;
+    top: 100px;
+    left: 120px;
+}
+.header__banner__text--trend{
+        font-size: 32px;
+        color: hsl(353, 100%, 78%);
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+}
+.header__banner__text--sale{
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 45px;
+}
+.header__banner__text--price{
+    font-size: 24px;
+    margin: 15px 0;
+}
+span{
+    font-size: 32px;
+    font-weight: bold;
+}
+.header__banner__button{
+    background-color: hsl(353, 100%, 78%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+</style>
+<body>
+
+    <div id="header-top">
+        <div class="header header__embed-icon">
+            <button class="fa-brands fa-facebook "></button>
+          <button class="fa-brands fa-twitter"></button>
+          <button class="fa-brands fa-instagram"></button>
+          <button class="fa-brands fa-linkedin"></button>
+      </div>
+            <div class="header header__text">
+            <p align="center">FREE SHIPPING THIS WEEK ORDER OVER - $55</p>
+            </div>
+        <div class="header header__tigia-and-language">
+            <select name="" class="header header__tigia">
+                <option value="$USD">$USD</option>
+                <option value="">VND</option>
+                <option value="">NDT</option>
+            </select>
+            <select name="" class="header header__language">
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="VIETNAMESE">VIETNAMESE</option>
+                <option value="CHINESE">CHINESE</option>
+            </select>
+        </div>
+    </div>
+<hr>
+        <div class="header header__search-logo">
+           <img id="header-logo" src="https://codewithsadee.github.io/anon-ecommerce-website/assets/images/logo/logo.svg" alt="logo">
+          <div class="header__search">
+           <input class="header header__search__input" type="text" placeholder="Enter your product name...">
+            <a class="fa-solid class fa-magnifying-glass header__search__a"></a>
+        </div>
+            <div class="header header__search-logo__button">
+                <a class="fa-regular class fa-user fa-2xl "></a>
+                <a class="fa-regular class fa-heart fa-2xl"></a>
+                <a class="fa-solid fa-bag-shopping fa-2xl"></a>
+                <!-- <i class="fa-so class fa-user"></i> -->
+            </div>
+      </div>
+    <nav>
+        <div class="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">CATEGORIES</a></li>
+            <li><a href="#">MEN'S</a></li>
+            <li><a href="#">WONEM'S</a></li>
+            <li><a href="#">JEWELRY</a></li>
+            <li><a href="#">PERFUME</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">HOT OFFERS</a></li>
+        </ul>
+    </div>
+        <div class="header header__banner">
+            <div class="header header__banner__block-text">
+                <p class="header header__banner__text--trend" >Trending item</p class="header header__banner__text">
+                <p class="header header__banner__text--sale">WOMEN'S LASTED FASHION SALE</p class="header header__banner__text">
+                <p class="header header__banner__text--price">starting at $ <span>20</span>.00</p class="header header__banner__text">
+                <button class="header header__banner__button">SHOP NOW</button>
+            </div>
+        <img id="banner" src="https://codewithsadee.github.io/anon-ecommerce-website/assets/images/banner-1.jpg" alt="banner">
+        </div>
+    </nav>
+</header>
+</body>
+</html>
