@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/58d4e782be.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>bai2</title>
+
+</head>
+<style>
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: "Inconsolata", monospace;
+    }
+    body{
+        padding: 30px;
+    }
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.header.header:first-child{
+    align-self: flex-start;
+}
+.header .menu__icon{
+    align-self: flex-end;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav .menu__title{
+
+   align-self: flex-start;
+    
+}
+.menu{
+    align-self: flex-end;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+}
+.menu ul li{
+    text-align: center;
+    margin-left: 20px;
+    padding: 15px 0;
+}
+.menu ul li a{
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: hsl(0, 0%, 27%)
+}
+.menu ul li a:hover{
+    border-bottom: solid 3px hsl(353, 100%, 78%);
+    color: hsl(353, 100%, 78%);
+}
+.content{
+    margin-top: 30px;
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    flex-basis: 33%
+}
+.content img{
+    width: 30%;
+    height: 400px;
+    object-fit: cover;
+
+}
+    .footer__text{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: hsl(0, 0%, 27%);
+}
+.footer__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+
+}
+.footer__logo img{
+    width: 15%;
+}
+</style>
+<body>
+    <div class="header">
+    <div class="header__title">
+        <h1>MyPortfolio</h1>
+    </div>
+    <div class="menu__icon">
+        <a style="cursor: pointer;" class="fa-solid fa-bars fa-2xl menu"></a>
+    </div>
+</div>
+<div class="nav">
+    <div class="menu__title">
+        <p style="font-size: 24px;">Hey, I-m Johan Stanworth</p>
+    <p style="font-size: 12px;">Freelance Creative & Professional Graphics Designer</p>
+</div>
+    <div class="menu">
+        <ul>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Web</a></li>
+            <li><a href="">Design</a></li>
+            <li><a href="">Branding</a></li>
+            <li><a href="">Photography</a></li>
+        </ul>
+    </div>
+</div>
+    <div class="content">
+        <img src="Ảnh2.jpg" alt="">
+        <img src="Ảnh3.jpg" alt="">
+        <img src="Ảnh4.jpg" alt="">
+        <img src="Ảnh5.jpg" alt="">
+        <img src="Ảnh6.jpg" alt="">
+        <img src="Ảnh7.jpg" alt="">
+        </div>
+    <div class="footer__text">
+            <p class="footer__text--header">My clients</p>
+            <p class="footer__Text--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, cum.</p>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="footer__logo">
+            <img src="Ảnh8.png" alt="">
+            <img src="Ảnh9.png" alt="">
+            <img src="Ảnh10.png" alt="">
+            <img src="Ảnh11.png" alt="">
+            <img src="Ảnh12.png" alt="">
+            <img src="Ảnh13.png" alt="">
+        </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIT14</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+.h, .i, .t, .l1, .l4 {
+    display: flex;
+    flex-direction: row;
+    width: 90px;
+    height: 210px;
+}
+.box1, .box2, .box3{
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    height: 210px;
+}
+    .box{
+        
+        width: 30px;
+        height: 30px;
+    }
+.h .box1, .h .box2 > :nth-child(4), .h .box3
+{
+    background-color: orange;
+}
+.i .box2 .box{
+    background-color: orange;
+}
+.t .box1 > :first-child, .t .box2, .t .box3 > :first-child{
+    background-color: orange;
+}
+.l1 .box2 .box{
+    background-color: orange;
+}
+.l4 .box1 > :not(:nth-child(5), :nth-child(6), :nth-child(7)), .l4 .box2 > :nth-child(4), .l4 .box3{
+    background-color: orange;
+}
+</style>
+<body>
+    <div class="logo">
+        <div class="h">
+            <div class="box1">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="box2">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="box3">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="i">
+            <div class="box1"></div>
+            <div class="box2">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="box3"></div>
+        </div>
+        <div class="t">
+            <div class="box1">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+       
+            <div class="box2">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="box3">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="l1">
+            <div class="box1"></div>
+            <div class="box2">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="box3"></div>
+        </div>
+        <div class="l4">
+            <div class="box1">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="box2">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="box3">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
