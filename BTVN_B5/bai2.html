@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIT</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+
+    body {
+        background-color: rgb(23, 89, 79);
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .HIT__banner {
+        border-radius: 50%;
+        overflow: hidden;
+        height: 250px;
+        width: 250px;
+    }
+
+    .banner-top {
+        position: absolute;
+        top: 10px;
+       right: 57%;
+        z-index: 1;
+    }
+
+    .banner-bottom {
+        position: absolute;
+        bottom: 10px;
+        left: 57%;
+        z-index: 1;
+    }
+.bg, .icon, button{
+    background-color: rgba(255, 255, 255, 0.3);
+   
+    box-shadow: 0 0 7px 3px rgb(1, 104, 1);
+}
+button{
+    border: none;
+}
+
+    .bg {
+        position: relative;
+        z-index: 1;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .login-container {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        padding: 40px 0;
+        gap: 15px;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.556);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 25%;
+        height:550px;
+        border-radius: 20px;
+    }
+
+    .login-container__logo {
+        width: 70%;
+        height: 70%;
+        z-index: 2;
+
+    }
+
+    .login-container__linked {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .icon {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .facebook, .whatsapp, .google , .youtube {
+       position: absolute;
+       top:50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+        width: 85%;
+        height: 100%;
+
+    }
+    .content__title{
+        text-align: center;
+        font-size: 24px;
+        color: aliceblue;
+    }
+    .content__desc{
+        text-align: center;
+        font-size: 16px;
+        color: aliceblue;
+    }
+    .content{
+    }
+    .container__button{
+        margin-top: 30px;
+        display: flex;
+        gap: 20px;
+    }
+    button{
+        width: 120px;
+        height: 50px;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <div class="HIT__banner banner-top">
+        <img src="https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/453796991_1081121157169702_5312845850256596531_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=vLMsM_AhnooQ7kNvgGXYCcl&_nc_ht=scontent.fhan5-8.fna&oh=00_AYDnW-0I8O6GLN6wHUzAHOrQwTmaPygHpI5VDipfWU8Uvw&oe=66B937C4"
+            alt="HIT_birthday">
+    </div>
+    <div class="login-container">
+        <div class="bg">
+            <div class="login-container__logo">
+                <img src="https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/445351512_1036672481614570_3759043079019191099_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=tUmHQ2cI5h8Q7kNvgEFOYR5&_nc_ht=scontent.fhan5-11.fna&oh=00_AYAqXsDQQDtkFLExuMaM4OuQfEMlc4aJMapD-AjHAjXe0g&oe=66B93C94"
+                    alt="HIT_logo">
+            </div>
+        </div>
+        <div class="content">
+            <p class="content__title">
+                Câu lạc bộ tin học HIT
+            </p>
+            <p class="content__desc"> Something</p>
+        </div>
+        <div class="login-container__linked">
+            <div class="icon">
+                <a href="https://www.youtube.com"><svg class="youtube" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48"
+                        height="48" viewBox="0 0 48 48">
+                        <path fill="#FF3D00"
+                            d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z">
+                        </path>
+                        <path fill="#FFF" d="M20 31L20 17 32 24z"></path>
+                    </svg></a>
+            </div>
+            <div class="icon">
+                <a href="https://www.facebook.com/groups/428963950009437">
+                    <svg class="facebook" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                        <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
+                        <path fill="#fff"
+                            d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="google.com">
+                    <svg class="google" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 64 64"
+                        style="fill:#228BE6;">
+                        <path
+                            d="M 32.521484 6 C 18.158484 6 6.515625 17.642 6.515625 32 C 6.515625 46.358 18.158484 58 32.521484 58 C 54.209484 58 59.098453 37.865969 57.064453 27.667969 L 51.181641 27.667969 L 49.269531 27.667969 L 32.515625 27.667969 L 32.515625 36.333984 L 49.279297 36.333984 C 47.351759 43.804816 40.588119 49.332031 32.515625 49.332031 C 22.943625 49.332031 15.181641 41.572 15.181641 32 C 15.181641 22.428 22.943625 14.667969 32.515625 14.667969 C 36.868625 14.667969 40.834906 16.283594 43.878906 18.933594 L 50.033203 12.779297 C 45.410203 8.5672969 39.266484 6 32.521484 6 z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="#"><svg class="whatsapp" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                        viewBox="0,0,256,256" style="fill:#000000;">
+                        <g fill="#5a9955" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(4,4)">
+                                <path
+                                    d="M32,10c-12.15,0 -22,9.85 -22,22c0,4.065 1.10725,7.86972 3.03125,11.13672l-2.81641,10.54688l11.0625,-2.47461c3.173,1.775 6.82866,2.79102 10.72266,2.79102c12.15,0 22,-9.85 22,-22c0,-12.15 -9.85,-22 -22,-22zM32,14c9.941,0 18,8.059 18,18c0,9.941 -8.059,18 -18,18c-3.731,0 -7.19631,-1.13513 -10.07031,-3.07812l-6.13867,1.37305l1.5625,-5.85547c-2.103,-2.946 -3.35352,-6.54345 -3.35352,-10.43945c0,-9.941 8.059,-18 18,-18zM24.47266,21.73633c-0.367,0 -0.95698,0.13564 -1.45898,0.68164c-0.493,0.547 -1.90039,1.86088 -1.90039,4.54688c0,2.676 1.9438,5.27191 2.2168,5.62891c0.273,0.367 3.77045,6.04552 9.31445,8.22852c4.596,1.81 5.53502,1.45142 6.54102,1.35742c0.998,-0.086 3.22278,-1.31298 3.67578,-2.58398c0.452,-1.272 0.45155,-2.3628 0.31055,-2.5918c-0.137,-0.222 -0.49502,-0.35981 -1.04102,-0.63281c-0.546,-0.274 -3.22456,-1.59344 -3.72656,-1.77344c-0.495,-0.18 -0.86175,-0.27452 -1.21875,0.27148c-0.367,0.546 -1.40742,1.77481 -1.73242,2.13281c-0.315,0.367 -0.62978,0.40972 -1.17578,0.13672c-0.546,-0.273 -2.30181,-0.84608 -4.38281,-2.70508c-1.619,-1.441 -2.71234,-3.22553 -3.02734,-3.76953c-0.316,-0.545 -0.03472,-0.84223 0.23828,-1.11523c0.248,-0.238 0.54731,-0.63227 0.82031,-0.94727c0.264,-0.324 0.35711,-0.54511 0.53711,-0.91211c0.189,-0.357 0.09303,-0.68208 -0.04297,-0.95508c-0.135,-0.274 -1.19369,-2.96897 -1.67969,-4.04297c-0.408,-0.904 -0.83456,-0.93045 -1.22656,-0.93945c-0.317,-0.016 -0.68402,-0.01562 -1.04102,-0.01562z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg></a>
+            </div>
+        </div>
+    <div class="container__button">
+        <button>Messange</button>
+        <button>Subscribe</button>
+    </div>
+    <p style="text-align: center; color: #fff;position: absolute; bottom: 50px;">Have a nice day !</p>
+    </div>
+    <div class="HIT__banner banner-bottom">
+        <img src="https://scontent.fvii2-4.fna.fbcdn.net/v/t1.6435-9/69642448_2474779412583585_7317446759855161344_n.png?_nc_cat=103&ccb=1-7&_nc_sid=53a332&_nc_ohc=3vAURbwvoREQ7kNvgEm_cr8&_nc_ht=scontent.fvii2-4.fna&oh=00_AYCVBGUR7wUx27at-plpvPRJXRz-bemXAuop7_uM_9MMCQ&oe=66B4B9D2"
+            alt="Aplly">
+    </div>
+</body>
+
+</html>
