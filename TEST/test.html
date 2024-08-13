@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karma:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/58d4e782be.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+    }
+    body{
+        background-color: rgba(227, 226, 226, 0.5);
+    }
+    a{
+        text-decoration: none;
+    }
+    .navbar{
+        background-image: url(./banner.jpg) ;
+        background-size: cover;
+        background-repeat: repeat;
+        height: 700px;
+    }
+
+    span {
+        font-weight: bold;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 50px;
+    }
+    .navbar__menu > ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 35px;
+    }
+    
+    .navbar__menu ul li a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+    
+    .navbar__menu ul li a:hover {
+        cursor: pointer;
+        color: orange;
+    }
+    
+    .sub-menu {
+        display: none;
+        list-style-type: none;
+    }
+    .click{
+        position: relative;
+    }
+    .navbar__menu ul li:hover .sub-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        border-radius: 10px;
+        background-color: white;
+        padding: 10px;
+        left: -10px;
+    }
+    .sub-menu li a{
+        color: black !important;
+    }
+    .navbar__title, .navbar__menu{
+        margin-top: 50px;
+    }
+    .navbar__content{
+        display: flex;
+        margin-top: 200px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        color: aliceblue;
+    }
+    .navbar__content__title p{
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .navbar__content__ct p{
+        font-size: 20px;
+    }
+    .navbar__content__button button{
+        width: 200px;
+        height: 50px;
+        background-color: red;
+        border-radius: 5px;
+    }
+    .navbar__content__button button p{
+        color: aliceblue;
+        font-size: 20px;
+    }
+    .content{
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        align-items: center;
+        padding: 60px 0;
+    }
+    .content__title{
+        width: 350px;
+    }
+    .content__ct{
+        width: 400px;
+    }
+    .content__ct p{
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .main, .main2{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .sub, .sub2{
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .content4{
+        background-image: url(./banner.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content2__title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px;
+        width: 100%;
+    }
+    .content2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;  
+        background-color: rgba(227, 226, 226, 0.5);
+        padding: 70px 0;
+    }
+    .box1, .box2{
+        width: 45% ;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center ;
+    background-color: azure;
+    }
+    .box1 p, .box2 p{
+        padding: 50px 10px;
+        font-weight: bold;
+    }
+    .content2 img{
+        width: 100%;
+    }
+    button{
+        border: none;
+    }
+    .content2__button button, .content4__button button{
+        width: 150px;
+        height: 40px;
+    }
+    .content2__button--red, .content4__button--red{
+        background-color: red;
+    }
+    .content2__button--red p, .content2__button--white p, 
+    .content4__button--red p{
+        color: aliceblue;
+        font-weight: bold;
+    }
+    .content2__button--white, .content4__button--white{
+        background-color: black;
+    }
+    .content3__title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content3, .content4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;  
+        background-color: rgba(255, 214, 154, 0.5);
+        padding: 70px 0;
+    }
+    .circle{
+        border-radius: 50%;
+        width: 200px;
+    }
+    .img img{
+        border-radius: 50%;
+        width: 90%; 
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0;
+        background-color: aliceblue;
+    }
+    .content4__title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .linked{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 100px 0;
+
+    }
+    .linked i{
+        font-size: 42px;
+    }
+    .text:first-child{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .text:nth-child(2){
+        color: rgba(0, 0, 0, 0.5);
+    }
+</style>
+
+<body>
+    <div class="web">
+        <div class="navbar">
+            <div class="nav">
+            <div class="navbar__title">
+                <p><span>SPATIAL</span> BY TEMPLATE</p>
+            </div>
+            <div class="navbar__menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li class="click"><a href="#">GENERIC</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">GENERIC1</a></li>
+                            <li><a href="#">GENERIC2</a></li>
+                            <li><a href="#">GENERIC3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ELEMENTS</a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="navbar__content">
+                <div class="navbar__content__title">
+                    <p>SPATIAL</p>
+                </div>
+                <div class="navbar__content__ct">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iste!</p>
+                </div>
+                <div class="navbar__content__button">
+                    <button><p>GET STARTED</p></button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content__title">
+                <p class="main">MAECENAS LUCTUS LECTUS</p>
+                <p class="sub">PERSPICIATIS DOROLEMQUE RECUSANDAE DOLOR</p>
+            </div>
+            <div class="content__ct">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus illo quia corporis quaerat nobis eos blanditiis ducimus sint voluptatem cum.
+            <br>
+            <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quos dolore culpa fuga accusantium ullam fugit possimus facere, labore ad!
+            </div>
+        </div>
+        <div class="content2">
+            <div class="content2__title">
+                <p class="main2">REPHALREER SHOPERFE EFEOFE</p>
+                <p class="sub2">DJEWOF SOFDSIO EFEWOF FOWHRFOEF FOHWFR OHEFOIFH</p>
+            </div>
+            <div class="box1">
+                <img src="./pic02.jpg" alt="no">
+                <p class="tit">
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+            <div class="box2">
+                <img src="./pic03.jpg" alt="no">
+                <p class="tit">
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+            <div class="content2__button">
+                <button class="content2__button--red"><p>NO THANK</p></button>
+                <button class="content2__button--white"><p>OK THANKS</p></button>
+            </div>
+        </div>
+        <div class="content3">
+            <div class="content3__title">
+                <p class="main2">REPHALREER SHOPERFE EFEOFE</p>
+                <p class="sub2">DJEWOF SOFDSIO EFEWOF FOWHRFOEF FOHWFR OHEFOIFH</p>
+            </div>
+            <div class="circle">
+                <div class="img">
+                    <img src="./pic04.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>LOREM</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti!</p>
+                    </div>
+                </div>
+                <div class="circle">
+                    <div class="img">
+                        <img src="./pic05.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <p>LOREM</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti!</p>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="img">
+                            <img src="./pic06.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <p>LOREM</p>
+                            <p>Lorem ipsum dolor sit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti!</p>
+                            </div>
+                        </div>
+                        <div class="circle">
+                            <div class="img">
+                                <img src="./pic07.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>LOREM</p>
+                                <p>Lorem ipsum dolor sit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti!</p>
+                                </div>
+                    
+                            </div>
+            </div>
+        
+        </div>
+        <div class="content4">
+            <div class="content4__title">
+                <p class="main2">REPHALREER SHOPERFE EFEOFE</p>
+                <p align="center" class="sub2">DJEWOF SOFDSIO EFEWOF FOWHRFOEF FOHWFR OHEFOIFH</p>
+                </div>
+                <div class="content4__button">
+                    <button class="content4__button--red" style="width:170px; height:50px;"><p>GET IN TOUCH</p></button>
+                 
+                </div>
+            </div>
+        </div>
+        <div class="linked">
+            <a href="facebook.com">
+                <i class="fa-brands fa-facebook-f fa-2xl" style="color: #989aa0;"></i>
+            </a>
+            <a href="x.com">
+                <i class="fa-brands fa-twitter fa-2xl" style="color: #989aa0;"></i>
+            </a>
+            <a href="instagram.com">
+                <i class="fa-brands fa-instagram fa-2xl" style="color: #989aa0;"></i>
+            </a>
+        </div>
+        <div style="display: flex; justify-content: center;" class="footer">
+            <p>Site made with: <span style="font-size: 16px; color:red">template</span></p>
+        </div>
+    </div>
+</body>
+
+</html>
