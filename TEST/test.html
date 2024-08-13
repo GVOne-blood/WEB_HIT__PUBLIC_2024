@@ -235,11 +235,14 @@
     .circle{
        display: flex;
        flex-direction: row;
+       justify-content: center;
+       align-items: center;
        flex-wrap: wrap;
     }
     .circle:nth-child(2), .circle:nth-child(4){
         flex-direction: row-reverse;
-    
+        text-align: right;
+        
     }
     .text{
         display: flex;
@@ -251,9 +254,6 @@
     .text:first-child{
         font-weight: bold;
         font-size: 16px;
-    }
-    .text:nth-child(2), .text:nth-child(4){
-       
     }
   
 </style>
