@@ -168,6 +168,7 @@
     }
     button{
         border: none;
+        cursor: pointer;
     }
     .content2__button button, .content4__button button{
         width: 150px;
@@ -200,10 +201,6 @@
         background-color: rgba(255, 214, 154, 0.5);
         padding: 70px 0;
     }
-    .circle{
-        border-radius: 50%;
-        width: 200px;
-    }
     .img img{
         border-radius: 50%;
         width: 90%; 
@@ -231,16 +228,34 @@
         padding: 100px 0;
 
     }
+
     .linked i{
         font-size: 42px;
+    }
+    .circle{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+    }
+    .circle:nth-child(2), .circle:nth-child(4){
+        flex-direction: row-reverse;
+    
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        gap: 10px;
+        height: auto;
     }
     .text:first-child{
         font-weight: bold;
         font-size: 16px;
     }
-    .text:nth-child(2){
-        color: rgba(0, 0, 0, 0.5);
+    .text:nth-child(2), .text:nth-child(4){
+       
     }
+  
 </style>
 
 <body>
@@ -320,7 +335,7 @@
                     <img src="./pic04.jpg" alt="">
                     </div>
                     <div class="text">
-                        <p>LOREM</p>
+                    <p>LOREM</p>
                     <p>Lorem ipsum dolor sit.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti!</p>
                     </div>
