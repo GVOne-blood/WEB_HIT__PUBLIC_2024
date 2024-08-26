@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container{
+        padding: 40px 80px;
+        display: grid;
+        grid-template-areas: 
+        "banner1 banner1 banner2 banner2"
+        "sidebar contentt contentt contentt" 
+        ;
+        gap: 20px;
+        grid-template-columns: 150px 200px;
+    }
+    .banner1{
+        grid-area: banner1;
+        width: 300px;
+        grid-column: 1 / 2;
+        position: relative;
+    }
+    .embed{
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .embed a{
+        font-size: 16px;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+        padding-bottom: 3px;
+        color: black;
+    }
+    .embed a:hover{
+        color: pink;
+        border-color: pink;
+    }
+    span{
+        font-weight: bold;
+    }
+    .banner2{
+        position: relative;
+        grid-area: banner2;
+        grid-column: 3 / 5;
+    }
+    .banner2 img{
+        width: 100%;
+        height: 79%;
+    }
+    
+    .sidebar{
+        grid-area: sidebar;
+        grid-column: 1 / 2;
+
+    }
+    .content{
+        grid-area: contentt;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       gap: 20px;
+
+
+    }
+    .item{
+        width: 280px;
+        height: 350px;
+    }
+    .item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .menu{
+        list-style-type: none;
+    }
+    .menu li a{
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .menu li{
+        margin-bottom: 30px;
+    }
+    ul > li:first-child{
+        font-weight: bold;
+        font-size: 24px;
+        
+    }
+    ul > li:last-child{
+        margin-top: 110px;
+        border-bottom: 1px solid black;
+        width: 100px;
+        font-weight: bold;
+    }
+    .item :nth-child(2){
+        font-weight: bold;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .item :last-child{
+        color: rgba(0, 0, 0, 0.6);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="banner1">
+            <img src="https://clauem2.arrowtheme.com/media/mgs/fbuilder/promobanners/5/_/5.png" alt="nothing">
+            <div class="embed">
+            <p>Orange Juice <br> <span>40% Flat</span></p>
+            <br>
+          
+            <a href="#">Shop Now</a>
+        </div>
+        </div>
+        <div class="banner2">
+        <img src="https://clauem2.arrowtheme.com/media/mgs/fbuilder/promobanners/6/a/6a.png" alt="nothingtoo">    
+        <div class="embed">
+        <p>Healthy Organic Vegestables <br> <span>Sale 20% Off</span></p>
+        <br>
+      
+        <a href="#">Shop Now</a>
+        </div>
+        </div>
+        <div class="sidebar">
+            <ul class="menu">
+                <li class="sub"><a href="#">Food</a></li>
+                <li class="sub"><a href="#">Fast food</a></li>
+                <li class="sub"><a href="#">Vegan food</a></li>
+                <li class="sub"><a href="#">Meat food</a></li>
+                <li class="sub"><a href="#">Sweet food</a></li>
+                <li class="sub"><a href="#">All Category</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="item">
+                <img src="https://clauem2.arrowtheme.com/media/catalog/product/cache/de6bec506494940b8fbc8b6822d59d20/i/m/image_76.png" alt="">
+                <p>Grilled sheep</p>
+                <p>$50.00</p>
+            </div>
+            <div class="item">
+                <img src="https://clauem2.arrowtheme.com/media/catalog/product/cache/de6bec506494940b8fbc8b6822d59d20/i/m/image_107.png" alt="">
+                <p>Saimon Florentine</p>
+                <p>$20.00</p>
+            </div>
+            <div class="item">
+                <img src="https://clauem2.arrowtheme.com/media/catalog/product/cache/de6bec506494940b8fbc8b6822d59d20/i/m/image_104_1.png" alt="">
+                <p>Turkey</p>
+                <p>$15.00</p>
+            </div>
+            <div class="item">
+                <img src="https://clauem2.arrowtheme.com/media/catalog/product/cache/de6bec506494940b8fbc8b6822d59d20/i/m/image_108.png" alt="">
+                <p>Goose breast</p>
+                <p>$25.00</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
